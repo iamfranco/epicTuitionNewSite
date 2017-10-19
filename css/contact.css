@@ -1,0 +1,11 @@
+.cardField {
+  background: #fff;
+  color: #333;
+  padding: 20px 30px;
+  width: 300px;
+  margin: 0 auto 30px auto;
+}
+
+.cardTitle {
+  font-size: 20px;
+}
