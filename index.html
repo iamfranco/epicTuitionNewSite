@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/carousel.css">
+    <!-- ScrollRevealJS -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
     <header>
@@ -99,7 +101,7 @@
     <!-- END of Introduction -->
 
     <!-- Promise section -->
-    <div class="promise">
+    <div class="promise section">
       <div class="container">
         <div class="heading hidden-md-down">
           Our Promises
@@ -158,4 +160,10 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript">
+    window.sr = ScrollReveal({viewFactor: 0.5, });
+    sr.reveal('.section');
+    sr.reveal('.heading');
+    sr.reveal('.jumbotron');
+  </script>
 </html>

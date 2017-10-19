@@ -13,6 +13,8 @@
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/services.css">
+    <!-- ScrollRevealJS -->
+    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
   </head>
   <body>
     <header>
@@ -31,7 +33,7 @@
     <div style="height: 20px"></div>
 
     <!-- Introduction -->
-    <div class="container">
+    <div class="container section">
       <div class="heading">
         Welcome to Epic Tuition
       </div>
@@ -43,17 +45,17 @@
     <div class="levelList">
       <div class="container">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-md-4 levelEl1">
             <div class="heading">Primary</div>
             <p>At Epic Tuition we want the very best for your child. We want to see them excel and strive towards being the best they can possibly be. We believe the early years of a child’s education are the most important: it sets the vital foundation to lead to future success, whether it’s providing the necessary skills to shine at GCSE’s and A-levels or giving your child the enthusiasm to pursue a subject in higher education.</p>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 levelEl2">
             <div class="heading">GCSE</div>
             <p>..At Epic Tuition we want the very best for your child. We want to see them excel and strive towards being the best they can possibly be. We believe the early years of a child’s education are the most important: it sets the vital foundation to lead to future success, whether it’s providing the necessary skills to shine at GCSE’s and A-levels or giving your child the enthusiasm to pursue a subject in higher education.</p>
           </div>
 
-          <div class="col-md-4">
+          <div class="col-md-4 levelEl3">
             <div class="heading">A-Level</div>
             <p>..At Epic Tuition we want the very best for your child. We want to see them excel and strive towards being the best they can possibly be. We believe the early years of a child’s education are the most important: it sets the vital foundation to lead to future success, whether it’s providing the necessary skills to shine at GCSE’s and A-levels or giving your child the enthusiasm to pursue a subject in higher education.</p>
           </div>
@@ -64,7 +66,7 @@
     <!-- END of Level list -->
 
     <!-- Future plans -->
-    <div class="container">
+    <div class="container section">
       <div class="heading">
         Our Future Plans
       </div>
@@ -95,4 +97,11 @@
       </div>
     </footer>
   </body>
+  <script type="text/javascript">
+    window.sr = ScrollReveal({viewFactor: 0.5, });
+    sr.reveal('.section');
+    sr.reveal('.levelEl1', { delay: 150 });
+    sr.reveal('.levelEl2', { delay: 300 });
+    sr.reveal('.levelEl3', { delay: 450 });
+  </script>
 </html>
