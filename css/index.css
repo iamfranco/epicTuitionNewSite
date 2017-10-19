@@ -1,0 +1,40 @@
+.promise {
+  background: #bde;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.promise .heading {
+  padding-top: 20px;
+}
+
+
+.promise ol {
+  list-style: none;
+  padding: 0;
+}
+
+.promise li {
+  counter-increment: item;
+  padding: 15px;
+}
+
+.promise li:before {
+  margin-right: 10px;
+  content: counter(item);
+  background: #234;
+  color: #fb5;
+  height: 1.5em;
+  width: 1.5em;
+  text-align: center;
+  display: inline-block;
+}
+
+.quoteName {
+  font-size: 18px;
+}
+
+.quote {
+  font-style: italic;
+  color: #555;
+}

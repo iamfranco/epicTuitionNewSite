@@ -1,0 +1,36 @@
+.tutorCard {
+  margin-bottom: 35px;
+}
+
+.tutorCard img {
+  border-radius: 5px;
+  width: 100%;
+  margin-right: 20px;
+  vertical-align: text-top;
+
+}
+
+.tutorCard .tutorDescription {
+  text-align: center;
+}
+
+.tutorName {
+  font-size: 1.5em;
+}
+
+.tutorHeadline {
+  color: #777;
+}
+
+@media (min-width: 768px) {
+  .tutorCard img {
+    width: 200px;
+  }
+
+  .tutorCard .tutorDescription {
+    display: inline-block;
+    width: calc(100% - 240px);
+    vertical-align: text-top;
+    text-align: left;
+  }
+}
