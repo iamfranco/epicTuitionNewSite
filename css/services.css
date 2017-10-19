@@ -1,0 +1,9 @@
+.levelList {
+  background: #edb;
+  margin-top: 20px;
+  padding-bottom: 10px;
+}
+
+.levelList .heading {
+  padding-top: 20px;
+}
