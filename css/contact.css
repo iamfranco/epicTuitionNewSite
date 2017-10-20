@@ -13,6 +13,10 @@
   /*box-shadow: 0px 20px 30px -30px grey;*/
 }
 
+.cardField .fa {
+  width: 23px;
+}
+
 .cardTitle {
   font-size: 20px;
 }
