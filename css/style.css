@@ -95,3 +95,6 @@ footer {
 .filler {
   height: 500px
 }
+
+/* avoid flicker*/
+.sr .fooReveal { visibility: hidden; }

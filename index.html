@@ -16,6 +16,10 @@
     <link rel="stylesheet" href="css/carousel.css">
     <!-- ScrollRevealJS -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+    <script type="text/javascript">
+      window.sr = ScrollReveal({viewFactor: 0.5, });
+      if (sr.isSupported()) document.documentElement.classList.add('sr'); // avoid flicker
+    </script>
   </head>
   <body>
     <header>
@@ -161,7 +165,6 @@
     </footer>
   </body>
   <script type="text/javascript">
-    window.sr = ScrollReveal({viewFactor: 0.5, });
     sr.reveal('.heading');
     sr.reveal('.jumbotron');
     sr.reveal('.promiseEl', 150);
