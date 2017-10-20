@@ -28,12 +28,23 @@
         <div class="header__title">
           <a href="index.html">EpicTuition</a>
         </div>
-        <ul class="header__btn">
+        <ul class="header__btn d-none d-md-block">
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="services.html">services</a></li>
           <li><a href="contact.html" class="active">contact</a></li>
         </ul>
+        <div class="header__menu-btn d-sm-block d-md-none">
+          <div class="header__menu-btn__line"></div>
+        </div>
+        <div class="header__menu">
+          <ul>
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about</a></li>
+            <li><a href="services.html">services</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </div>
       </div>
     </header>
     <div style="height: 20px"></div>
@@ -98,9 +109,12 @@
     </footer>
   </body>
   <script type="text/javascript">
+    // scrollreveal
     sr.reveal('.heading');
     sr.reveal('.details', {delay: 150});
     sr.reveal('.map', {delay: 300});
     sr.reveal('.letUsKnowDetail');
   </script>
+  <!-- header__menu for mobile -->
+  <script src="js/header__menu.js"></script>
 </html>
