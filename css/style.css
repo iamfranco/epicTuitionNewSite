@@ -69,10 +69,65 @@ header {
 
 footer {
   background: #222;
-  padding: 20px;
+  padding: 30px;
   color: #eee;
-  font-family: 'Lato', sans-serif;
   margin-top: 60px;
+}
+
+.footer__address {
+  text-align: center;
+}
+
+.fa-mobile-phone {
+  margin-left: 2px;
+  margin-right: -2px;
+  font-size: 24px;
+  line-height: 1rem;
+  padding-top: 1rem;
+}
+
+.footer__contact {
+  text-align: center;
+}
+
+.footer__contact .fa {
+  width: 23px;
+}
+
+.footer__social {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.footer__social a {
+  font-size: 2em;
+  color: #888;
+}
+
+.footer__social .fa-facebook-official:hover {
+  color: #3b5998;
+}
+
+.footer__copyright {
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .footer__address {
+    text-align: right;
+  }
+  .footer__contact {
+    text-align: left;
+  }
+  .footer__social {
+    margin: 0;
+    margin: none
+  }
+  .footer__copyright {
+    margin: 0;
+    margin: none
+  }
 }
 
 
