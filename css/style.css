@@ -4,6 +4,15 @@ body {
   background: #fafafa;
 }
 
+.noselect {
+  -webkit-touch-callout: none;
+    -webkit-user-select: none;
+     -khtml-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
 a:hover {
   text-decoration: none;
 }
@@ -73,7 +82,7 @@ header {
   position: relative;
   top: 14px;
   background: #fff;
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .header__menu-btn__line::before,
@@ -83,7 +92,7 @@ header {
   position: absolute;
   background: #fff;
   content: "";
-  transition: all 0.1s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .header__menu-btn__line::before {
