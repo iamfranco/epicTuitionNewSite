@@ -119,7 +119,6 @@ header {
 
 .header__menu {
   display: none;
-  text-transform: capitalize;
 }
 
 .header__menu.active {
@@ -130,9 +129,11 @@ header {
 .header__menu ul {
   list-style: none;
   padding: 0;
+  margin: 5px 0;
 }
 
 .header__menu li {
+  text-transform: capitalize;
   text-decoration: none;
   color: #aaa;
   transition: all 0.2s ease-in-out;
@@ -140,6 +141,24 @@ header {
 
 .header__menu a {
   color: #fff;
+}
+
+.header__menu__contact::before {
+  width: 100%;
+  height: 1px;
+  position: absolute;
+  background: #555;
+  content: "";
+  top: 5px;
+}
+
+.header__menu__contact {
+  color: #ccc;
+  position: relative;
+}
+
+.header__menu__contact .fa {
+  width: 20px;
 }
 /* END of mobile header menu */
 
@@ -164,7 +183,7 @@ footer {
 .fa-mobile-phone {
   margin-left: 2px;
   margin-right: -2px;
-  font-size: 24px;
+  font-size: 26px;
   line-height: 1rem;
   padding-top: 1rem;
 }
