@@ -7,3 +7,15 @@
 .levelList .heading {
   padding-top: 20px;
 }
+
+.price {
+  margin-top: 50px;
+  text-align: center;
+  font-size: 52px;
+  line-height: 30px;
+}
+
+.price__subtext {
+  display: block;
+  font-size: 1rem;
+}
