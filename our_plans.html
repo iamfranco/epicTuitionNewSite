@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>EpicTuition - Contact</title>
+    <title>EpicTuition - Our Plans</title>
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -14,11 +14,11 @@
     <!-- style -->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/our_plans.css">
     <!-- ScrollRevealJS -->
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
     <script type="text/javascript">
-      window.sr = ScrollReveal({viewFactor: 0.5, });
+      window.sr = ScrollReveal({viewFactor: 0.3, });
       if (sr.isSupported()) document.documentElement.classList.add('sr'); // avoid flicker
     </script>
   </head>
@@ -32,8 +32,8 @@
           <li><a href="index.html">home</a></li>
           <li><a href="about.html">about</a></li>
           <li><a href="services.html">services</a></li>
-          <li><a href="our_plans.html">our plans</a></li>
-          <li><a href="contact.html" class="active">contact</a></li>
+          <li><a href="our_plans.html" class="active">our plans</a></li>
+          <li><a href="contact.html">contact</a></li>
         </ul>
         <div class="header__menu-btn d-sm-block d-md-none">
           <div class="header__menu-btn__line"></div>
@@ -54,38 +54,53 @@
     </header>
     <div style="height: 20px"></div>
 
-    <!-- Contact info -->
-    <div class="container">
+    <!-- Introduction -->
+    <div class="container section">
       <div class="heading">
-        How to find us
+        Our Plans for the Future
       </div>
-      <div class="row">
-        <!-- Contact details -->
-        <div class="col-md-6 col-lg-4 details">
-          <p>This is a map to help you find where our Epic tuition centre is, if you have any problem finding us don't hesitate to contact us.</p>
-          <div class="cardField">
-            <div class="cardTitle">Contact Info</div>
-            <i class="fa fa-mobile-phone"></i> 0774 928 4101<br>
-            <i class="fa fa-envelope-o"></i> contact@epictuition.com
+      <p>At EpicTuition, we are always trying to improve our quality of teaching, extend our coverage of subjects and explore new ways to deliver content. We have ambitious plans for the future of EpicTuition. Let us show you some of them!</p>
+    </div>
+    <!-- END of Introduction -->
+
+    <!-- virtual tutor website -->
+    <div class="virtual-tutor-website plan-item">
+      <div class="container">
+        <div class="heading heading--left">Virtual Tutor Website</div>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="video-container">
+              <iframe
+                class="video"
+                src="https://www.youtube.com/embed/DRaK9zMx6ls"
+                frameborder="0"
+                allowfullscreen>
+              </iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- END of virtual tutor website-->
+
+    <!-- computing subject -->
+    <div class="computing  plan-item">
+      <div class="container">
+        <div class="heading">Computer Programming</div>
+        <div class="row">
+          <p class="col-md-6 col-lg-8 col-xl-9">We're living in a digital age, surrounded by computers, smartphones and tablets. Most of us have only been a "user" of technology, using only programs developed by others. This course will bring you into the "development" side of technology, giving you skills to harness the full potential of your machines.</p>
+          <div class="mx-auto col-xs-8 col-sm-8 col-md-6 col-lg-4 col-xl-3">
+            <img src="res/icons/zombie.svg" alt="">
           </div>
         </div>
-        <!-- MAP -->
-        <div class="col-md-6 col-lg-8 map">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9501.74005117849!2d-2.265131235998534!3d53.4606852493176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x77e4d2bd8b05923e!2sOgaden+Community+of+Greater+Manchester!5e0!3m2!1sen!2suk!4v1508396482022" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-
       </div>
     </div>
-    <!-- END of Contact info -->
+    <!-- END of virtual tutor website-->
 
-    <!-- Let us know -->
-    <div class="container">
-      <div class="heading">
-        Let us know what you think!
-      </div>
-      <p class="letUsKnowDetail">At Epic Tuition we strive to be the best tuition centre out there. If you have any suggestions, advice or anything you want to tell us to help us improve our services, do not hesitate to let us know. We would love to hear how a session went, if there are any subjects we do not offer that you want tuition in, or any questions at all. Just send us an email to contact@epictuition.com. We look forward to hearing from you all!</p>
-    </div>
-    <!-- END of Let us know -->
 
     <footer>
       <div class="container">
@@ -115,10 +130,8 @@
   </body>
   <script type="text/javascript">
     // scrollreveal
-    sr.reveal('.heading');
-    sr.reveal('.details', {delay: 150});
-    sr.reveal('.map', {delay: 300});
-    sr.reveal('.letUsKnowDetail');
+    sr.reveal('.section');
+    sr.reveal('.plan-item');
   </script>
   <!-- header__menu for mobile -->
   <script src="js/header__menu.js"></script>

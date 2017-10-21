@@ -19,7 +19,7 @@
   padding: 15px;
 }
 
-.promise li:before {
+.promise li::before {
   margin-right: 10px;
   content: counter(item);
   background: #234;
