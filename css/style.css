@@ -141,6 +141,12 @@ header {
 
 .header__menu a {
   color: #fff;
+  display: block;
+  padding: 5px;
+}
+
+.header__menu li a.active {
+  background: #2a2a2a;
 }
 
 .header__menu__contact::before {
