@@ -19,7 +19,7 @@ document.write(
     '<div class="header__menu-btn d-sm-block d-md-none">'+
       '<div class="header__menu-btn__line"></div>'+
     '</div>'+
-    '<div class="header__menu">'+
+    '<div class="header__menu d-md-none">'+
       '<ul>'+
         linkList+
       '</ul>'+
