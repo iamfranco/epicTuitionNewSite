@@ -1,5 +1,6 @@
 // write header
-document.write('<header class="noselect">'+
+document.write(
+'<header class="noselect">'+
   '<div class="container">'+
     '<div class="header__title">'+
       '<a href="index.html">EpicTuition</a>'+
@@ -36,7 +37,6 @@ var linkArray = document.getElementsByClassName('header__btn')[0].getElementsByT
 for (var i=0; i<linkArray.length; i++) {
   var href = linkArray[i].getAttribute('href');
   if (fileName == href) {
-    console.log(fileName + '==' + href);
     linkArray[i].classList.add('active');
     break;
   }
