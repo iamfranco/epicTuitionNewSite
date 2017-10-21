@@ -36,12 +36,17 @@ var url = window.location.pathname;
 var fileName = url.substring(url.lastIndexOf('/')+1);
 var linkArray = document.getElementsByClassName('header__btn')[0].getElementsByTagName('a');
 var mobileLinkArray = document.getElementsByClassName('header__menu')[0].getElementsByTagName('a');
-for (var i=0; i<linkArray.length; i++) {
-  var href = linkArray[i].getAttribute('href');
-  if (fileName == href) {
-    linkArray[i].classList.add('active');
-    mobileLinkArray[i].classList.add('active');
-    break;
+if (fileName === "") {
+  linkArray[0].classList.add('active');
+  mobileLinkArray[0].classList.add('active');
+} else {
+  for (var i=0; i<linkArray.length; i++) {
+    var href = linkArray[i].getAttribute('href');
+    if (fileName == href) {
+      linkArray[i].classList.add('active');
+      mobileLinkArray[i].classList.add('active');
+      break;
+    }
   }
 }
 
