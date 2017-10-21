@@ -41,3 +41,11 @@ for (var i=0; i<linkArray.length; i++) {
     break;
   }
 }
+
+// toggle mobile menu button style (hamburger <-> cross)
+var menuBtn = document.querySelector('.header__menu-btn');
+var menu = document.querySelector('.header__menu');
+menuBtn.addEventListener('click', function() {
+  menuBtn.classList.toggle('active');
+  menu.classList.toggle('active');
+})
