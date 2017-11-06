@@ -103,8 +103,8 @@ header {
   top: 10px;
 }
 
-.header__menu-btn.active .header__menu-btn__line {
-  background: rgba(0,0,0,0);
+.header__menu-btn__line.active {
+  opacity: 0;
 }
 
 .header__menu-btn.active .header__menu-btn__line::before {
