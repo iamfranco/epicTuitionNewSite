@@ -18,7 +18,7 @@ document.write(
         '</div>'+
       '</div>'+
       '<div class="col-md-4 footer__contact">'+
-        '<i class="fa fa-mobile-phone"></i> 0774 928 4101<br>'+
+        '<i class="fa fa-mobile-phone"></i> 0774 928 4101 (Zak)<br>'+
         '<i class="fa fa-envelope-o"></i> contact@epictuition.com<br>'+
       '</div>'+
     '</div>'+
